@@ -1,0 +1,400 @@
+body {
+    background-image: url("../public/img/background.png");
+    background-color:black;
+    height: 500px;
+    background-position: topleft;
+    background-repeat: repeat;
+    font-family: "Oxygen", sans-serif;
+    
+}
+
+.title{
+    text-align: center;
+    color: #b6b0a9;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.subtitle{
+    color: #b6b0a9;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+
+
+/* ******************************************** */
+/* ******************** NAV ******************* */
+/* ******************************************** */
+
+.nav{
+    grid-area: nav;
+}
+
+.menu{
+    list-style-type: none;
+    overflow: hidden;
+    
+}
+
+
+.homeBut, .menuBut, .here{    
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-weight: 400;
+    background-color: transparent;
+    border-radius: 12px;
+    padding-top: 10px;
+    margin: 5px;
+
+
+} 
+
+.homeBut{
+    height: 30px;
+    width: 40px;
+    color: #ABA8A4;
+    border: 1px solid #FFFFFF2B;
+}
+
+.menuBut{
+    height: 30px;
+    width: 90px;
+    color: #ABA8A4;
+    border: 1px solid #FFFFFF2B;
+}
+
+
+.here{
+    height: 30px;
+    width: 90px;
+    color: #5E5B3A;
+    border: 1px solid #5E5B3A;
+
+}
+
+
+.menuBut:hover, .homeBut:hover {
+    color: #5E5B3A;
+    border: 1px solid #5E5B3A;
+    transform: scale(1.1, 1.1);
+
+}
+
+/* ******************************************** */
+/* ****************** FOOTER ****************** */
+/* ******************************************** */
+
+.footer{
+    grid-area: footer;
+}
+
+hr {
+    background-color: #FFFFFF2B;
+    height: 1px; 
+    border: 0;
+}
+
+
+#copy {
+    text-align: center;
+    color: #ABA8A4;
+    font-size: 12px;
+
+}
+
+
+.contactInfo{
+    list-style-type: none;
+    overflow: hidden;
+    padding-left: 70px;
+
+}
+
+.contact{
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 20px;
+    height: 50px;
+    width: 60px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: transparent; 
+    border: 1px solid #FFFFFF2B;
+    border-radius: 15px;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+
+.contact:hover {
+    color: #FFFFFF;
+    border: 1px solid#FFFFFF;
+    transform: scale(1.1, 1.1);
+
+
+}
+
+
+/* ////////////////////////////////////// */
+/* /////////////// INDEX /////////////// */
+/* ///////////////////////////////////// */
+
+
+.home {
+    display: grid;
+    grid-template-areas:
+      'logo nav'
+      'moto nav'
+      'footer footer';
+    background: rgba(0, 0, 0, 0.747);
+    padding: 4rem 2.875rem;
+    border-radius: 20px;
+    margin: 90px 610px 128px 610px;
+
+}     
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:50% 50% 50% 50%;  
+    width:180px;
+    height:180px;
+    padding: 20px;
+    grid-area: logo;
+
+}
+
+.moto {
+    font-size: 12px;
+    text-align: center;
+    color: #b6b0a9;
+    grid-area: moto; 
+
+}
+
+
+.button{
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.pages{
+    padding: 16px 32px;
+    width: 160px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 12px 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: transparent; 
+    color: #ABA8A4; 
+    border: 1px solid #FFFFFF2B;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.pages:hover {
+    color: #5E5B3A;
+    border: 1px solid #5E5B3A;
+    transform: scale(1.1, 1.1);
+
+}
+
+
+/* ////////////////////////////////////// */
+/* /////////////// RATES /////////////// */
+/* ///////////////////////////////////// */
+
+.ratesHome{
+    display: grid;
+    grid-template-areas:
+    'nav nav'
+    'main main'
+    'gal gal'
+    'gal gal'
+    'bottom bottom'
+    'footer footer';
+    background: rgba(0, 0, 0, 0.747);
+    padding: 2rem 2.875rem;
+    border-radius: 20px;
+    margin: 30px 610px 128px 610px;
+
+}     
+
+.ratesMain{ 
+    grid-area: main;
+    color: #b6b0a9;
+    font-size: 19px;
+}
+
+/* G A L E R I A */
+
+.gal{
+    grid-area: gal;
+    display: grid;
+    grid-template-areas:
+    'item1 item2'
+    'item3 item4';
+    padding-top: 30px;
+}
+
+.ratesItem1{ 
+    grid-area: item1; 
+}
+  
+.ratesItem2{ 
+    grid-area: item2; 
+}
+
+.ratesItem3{ 
+    grid-area: item3; 
+}
+
+.ratesItem4{ 
+    grid-area: item4; 
+}
+
+.ratesItem{ 
+    position: relative;
+    width: 100%;
+}
+  
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+}
+  
+.text {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.ratesItem:hover .image {
+    opacity: 0.3;
+}
+  
+.ratesItem:hover .text {
+    opacity: 1;
+}
+  
+.textBox {
+    background-color: #78735F;
+    color: #BFBBB6;
+    font-size: 16px;
+    padding: 10px;
+
+}
+
+/* FIN GALERIA */
+
+
+.ratesBottom{ 
+    grid-area: bottom; 
+    color: #b6b0a9;
+    font-size: 19px;
+}
+
+
+
+/* ////////////////////////////////////// */
+/* ///////////////// CC ///////////////// */
+/* ///////////////////////////////////// */
+
+
+.ccHome{
+    display: grid;
+    grid-template-areas:
+    'nav nav'
+    'item1 item2'
+    'bottom bottom'
+    'footer footer';
+    background: rgba(0, 0, 0, 0.747);
+    padding: 32px 2.875rem;
+    border-radius: 20px;
+    margin: 30px 610px 128px 610px;
+
+}     
+
+.ccYES{
+    grid-area: item1;
+    color: #b6b0a9;
+    font-size: 19px;
+}
+
+.ccNO{
+    grid-area: item2;
+    color: #b6b0a9;
+    font-size: 19px;
+}
+
+
+.ccBottom{ 
+    grid-area: bottom; 
+
+}
+
+/* ////////////////////////////////////// */
+/* //////////////// SHIP //////////////// */
+/* ///////////////////////////////////// */
+
+.shipHome{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.747);
+    padding: 32px 2.875rem;
+    border-radius: 20px;
+    margin: 30px 610px 128px 610px;
+    justify-content: center;
+
+}    
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    justify-content: left;
+}
+
+table{
+    width:100%;
+    height:200px;
+
+}
+
+
+/* ////////////////////////////////////// */
+/* //////////////// HOW //////////////// */
+/* ///////////////////////////////////// */
+
+.howHome{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.747);
+    padding: 32px 2.875rem;
+    border-radius: 20px;
+    margin: 30px 610px 128px 610px;
+    justify-content: center;
+    color: #b6b0a9;
+
+}    
+
+
+
