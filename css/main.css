@@ -213,6 +213,26 @@ hr {
 
 
 /* ////////////////////////////////////// */
+/* /////////////// ABOUT //////////////// */
+/* ///////////////////////////////////// */
+
+/* AUN NO SE SI HARE UN GRID O FLEX */
+
+.aHome{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.747);
+    padding: 32px 2.875rem;
+    border-radius: 20px;
+    margin: 30px 610px 128px 610px;
+
+}     
+
+
+
+
+
+/* ////////////////////////////////////// */
 /* /////////////// RATES /////////////// */
 /* ///////////////////////////////////// */
 
@@ -313,44 +333,6 @@ hr {
     font-size: 19px;
 }
 
-
-
-/* ////////////////////////////////////// */
-/* ///////////////// CC ///////////////// */
-/* ///////////////////////////////////// */
-
-
-.ccHome{
-    display: grid;
-    grid-template-areas:
-    'nav nav'
-    'item1 item2'
-    'bottom bottom'
-    'footer footer';
-    background: rgba(0, 0, 0, 0.747);
-    padding: 32px 2.875rem;
-    border-radius: 20px;
-    margin: 30px 610px 128px 610px;
-
-}     
-
-.ccYES{
-    grid-area: item1;
-    color: #b6b0a9;
-    font-size: 19px;
-}
-
-.ccNO{
-    grid-area: item2;
-    color: #b6b0a9;
-    font-size: 19px;
-}
-
-
-.ccBottom{ 
-    grid-area: bottom; 
-
-}
 
 /* ////////////////////////////////////// */
 /* //////////////// SHIP //////////////// */
