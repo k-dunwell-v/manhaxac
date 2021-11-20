@@ -7,20 +7,24 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" title="a">
+       
         <link rel="stylesheet" href="../css/main.css">
+
         <title>Shipping</title>
+        
     </head>
 
     <body>
 
-        <div class="shipHome">
+        <div class="shipHome" id="bootstrap-overrides">
 
-            <nav class="nav">
+            <nav class="nav" id="bootstrap-overrides">
 
-                <ul class="menu">
+                <ul class="menu" id="bootstrap-overrides">
 
-                    <li>
+                    <li id="bootstrap-overrides">
                         <a href="../index.html" class="homeBut">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                             width="22" height="22"
@@ -55,35 +59,30 @@
 
                 <h1 class="title">Shipping</h1>
 
-                <ul  class="subtitle" >
-                    
-                    <li>
-                        <h2>Shipping methods</h2>
-                    </li>
-
-                    <table>
-                        <tr>
-                            <th>METHOD</th>
-                            <th>TRACKING</th>
-                            <th>INSURANCE</th>
-                            <th>ESTIMATED DELIVERY TIME (USA)</th>
-                        </tr>
-                        <tr>
-                          <td>Certified International Mail</td>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">METHOD</th>
+                            <th scope="col">TRACKING</th>
+                            <th scope="col">INSURANCE</th>
+                            <th scope="col">ESTIMATED DELIVERY TIME (USA)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Certified International Mail</td>
                             <td>Yes</td>
                             <td>Yes</td>
                             <td>From 4 to 8 weeks</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>EMS</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">EMS</td>
                             <td>Yes</td>
                             <td>Yes</td>
                             <td>From 4 to 6 business days</td>
-                        </tr>
-                      </table>
-
-                </ul>
+                          </tr>
+                        </tbody>
+                    </table>
 
             </main>
 
