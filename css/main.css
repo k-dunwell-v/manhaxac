@@ -29,7 +29,7 @@ body {
 /* ******************** NAV ******************* */
 /* ******************************************** */
 
-.nav{ 
+.minnav{ 
     grid-area: nav;
 }
 
@@ -228,25 +228,18 @@ hr {
 
 
 
-
-
 /* ////////////////////////////////////// */
 /* /////////////// RATES /////////////// */
 /* ///////////////////////////////////// */
 
 .ratesHome{
-    display: grid;
-    grid-template-areas:
-    'nav nav'
-    'main main'
-    'gal gal'
-    'gal gal'
-    'bottom bottom'
-    'footer footer';
+    display: flex;
+    flex-direction: column;
     background: rgba(0, 0, 0, 0.747);
-    padding: 2rem 2.875rem;
+    padding: 32px 2.875rem;
     border-radius: 20px;
     margin: 30px 610px 128px 610px;
+    justify-content: center;
 
 }     
 
@@ -256,70 +249,29 @@ hr {
     font-size: 19px;
 }
 
+.supplies {
+    border-radius: 10px;
+
+}
+
+
 /* G A L E R I A */
 
-.gal{
-    grid-area: gal;
-    display: grid;
-    grid-template-areas:
-    'item1 item2'
-    'item3 item4';
-    padding-top: 30px;
+.carousel {
+    padding: 20px 10px;
 }
 
-.ratesItem1{ 
-    grid-area: item1; 
-}
-  
-.ratesItem2{ 
-    grid-area: item2; 
+.d-block {
+    border-radius: 10px;
 }
 
-.ratesItem3{ 
-    grid-area: item3; 
-}
-
-.ratesItem4{ 
-    grid-area: item4; 
-}
-
-.ratesItem{ 
-    position: relative;
-    width: 100%;
-}
-  
-.image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-}
-  
-.text {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-  
-.ratesItem:hover .image {
-    opacity: 0.3;
-}
-  
-.ratesItem:hover .text {
-    opacity: 1;
-}
-  
 .textBox {
     background-color: #78735F;
-    color: #BFBBB6;
+    color: #e6e4e1;
     font-size: 16px;
-    padding: 10px;
-
+    padding: 20px;
+    border-radius: 10px;
+    
 }
 
 /* FIN GALERIA */
@@ -344,13 +296,11 @@ hr {
     border-radius: 20px;
     margin: 30px 610px 128px 610px;
     justify-content: center;
+    color: #b6b0a9;
 
 }    
 
-.table {
-    color: #b6b0a9;
-     
-}
+
 
 
 
