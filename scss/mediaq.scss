@@ -1,0 +1,80 @@
+@media only screen and (max-width: 1440px){
+    .home {
+        margin: 90px 380px 108px 380px;
+    
+    }
+
+    .flexHome{
+        margin: 30px 380px 108px 380px;
+    
+    }
+
+    .contactInfo{
+        padding-left: 85px;
+        
+    }
+    
+}
+
+
+@media only screen and (max-width: 1024px){
+    .home {
+        margin: 90px 180px 108px 180px;
+    
+    }
+
+    .flexHome{
+        margin: 30px 180px 108px 180px;
+    
+    }
+
+    .contactInfo{
+        padding-left: 70px;
+        
+    }
+
+
+}
+
+
+@media only screen and (max-width: 768px){
+    .home {
+        margin: 90px 30px 64px 30px;
+    
+    }
+
+    .flexHome{
+        margin: 30px 30px 64px 30px;
+    
+    }
+
+    .contactInfo{
+        padding-left: 95px;
+        
+    }
+
+
+}
+
+@media only screen and (max-width: 425px){
+    .home, .flexHome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 23px;
+        margin: 15px 15px 32px 15px;
+    
+    }
+
+    .button{
+        list-style: none;
+        justify-content: space-evenly;
+        padding: 4px
+    }
+
+    .contactInfo{
+        padding-left: 50px;
+        
+    }
+
+}
