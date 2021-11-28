@@ -144,33 +144,32 @@ body {
   margin: 30px 610px 128px 610px;
   color: #b6b0a9; }
   .flexHome .carousel {
-    padding: 20px 10px; }
+    padding: 10px 10px; }
   .flexHome .d-block {
     border-radius: 10px; }
 
-.gal {
-  grid-area: gal;
+.sample {
   display: grid;
   grid-template-areas: 'item1 item2' 'item3 item4';
   padding-top: 30px; }
-  .gal .ratesItem1 {
+  .sample .ratesItem1 {
     grid-area: item1; }
-  .gal .ratesItem2 {
+  .sample .ratesItem2 {
     grid-area: item2; }
-  .gal .ratesItem3 {
+  .sample .ratesItem3 {
     grid-area: item3; }
-  .gal .ratesItem4 {
+  .sample .ratesItem4 {
     grid-area: item4; }
-  .gal .ratesItem {
+  .sample .ratesItem {
     position: relative;
     width: 100%; }
-  .gal .image {
+  .sample .image {
     opacity: 1;
     display: block;
     width: 100%;
     height: auto;
     transition: .5s ease; }
-  .gal .text {
+  .sample .text {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -178,11 +177,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-  .gal .ratesItem:hover .image {
+  .sample .ratesItem:hover .image {
     opacity: 0.3; }
-  .gal .ratesItem:hover .text {
+  .sample .ratesItem:hover .text {
     opacity: 1; }
-  .gal .textBox {
+  .sample .textBox {
     background-color: #78735F;
     color: #BFBBB6;
     font-size: 16px;
