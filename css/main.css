@@ -69,7 +69,7 @@ body {
   .footer .contactInfo {
     list-style-type: none;
     overflow: hidden;
-    padding: 0px 70px; }
+    padding-left: 65px; }
     .footer .contactInfo .contact {
       float: left;
       text-align: center;
@@ -94,8 +94,8 @@ body {
   display: grid;
   grid-template-areas: 'logo nav' 'moto nav' 'footer footer';
   background: rgba(0, 0, 0, 0.747);
-  padding: 64px 46px;
   border-radius: 20px;
+  padding: 64px 46px;
   margin: 90px 610px 128px 610px; }
   .home .logo {
     display: block;
@@ -139,36 +139,41 @@ body {
   display: flex;
   flex-direction: column;
   background: rgba(0, 0, 0, 0.747);
-  padding: 32px 46px;
   border-radius: 20px;
+  padding: 32px 46px;
   margin: 30px 610px 128px 610px;
   color: #b6b0a9; }
   .flexHome .carousel {
-    padding: 10px 10px; }
+    padding: 10px; }
   .flexHome .d-block {
     border-radius: 10px; }
 
 .sample {
   display: grid;
   grid-template-areas: 'item1 item2' 'item3 item4';
-  padding-top: 30px; }
-  .sample .ratesItem1 {
-    grid-area: item1; }
-  .sample .ratesItem2 {
-    grid-area: item2; }
-  .sample .ratesItem3 {
-    grid-area: item3; }
-  .sample .ratesItem4 {
-    grid-area: item4; }
+  padding-top: 10px;
+  justify-content: space-evenly; }
   .sample .ratesItem {
     position: relative;
-    width: 100%; }
+    width: 90%;
+    margin: 5px;
+    padding: 5px; }
+    .sample .ratesItem .ratesItem1 {
+      grid-area: item1; }
+    .sample .ratesItem .ratesItem2 {
+      grid-area: item2; }
+    .sample .ratesItem .ratesItem3 {
+      grid-area: item3; }
+    .sample .ratesItem .ratesItem4 {
+      grid-area: item4; }
   .sample .image {
     opacity: 1;
     display: block;
     width: 100%;
     height: auto;
-    transition: .5s ease; }
+    transition: .5s ease;
+    border-radius: 15px;
+    border: solid #BFBBB6 1px; }
   .sample .text {
     transition: .5s ease;
     opacity: 0;
@@ -185,7 +190,8 @@ body {
     background-color: #78735F;
     color: #BFBBB6;
     font-size: 16px;
-    padding: 10px; }
+    padding: 10px;
+    border-radius: 10px; }
 
 @media only screen and (max-width: 1440px) {
   .home {

@@ -110,7 +110,7 @@ body {
     .contactInfo{
         list-style-type: none;
         overflow: hidden;
-        padding: 0px 70px;
+        padding-left: 65px;
     
         .contact{
             float: left;
@@ -141,6 +141,11 @@ body {
 }
 
 
+@mixin site-style {
+    background: rgba(0, 0, 0, 0.747);
+    border-radius: 20px;
+  }
+
 
 .home {
     display: grid;
@@ -148,9 +153,8 @@ body {
       'logo nav'
       'moto nav'
       'footer footer';
-    background: rgba(0, 0, 0, 0.747);
+    @include site-style;
     padding: $home-padding;
-    border-radius: 20px;
     margin: $home-margin;
 
     .logo{
@@ -208,22 +212,20 @@ body {
 }     
 
 
-
 .flexHome{
     display: flex;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.747);
+    @include site-style;
     padding: $main-padding;
-    border-radius: 20px;
     margin: $main-margin;
     color: $main-color;
     
     .carousel {
-        padding: 10px 10px;
+        padding: 5px + 5;
     }
 
     .d-block {
-        border-radius: 10px;
+        border-radius: 5px + 5;
     }
     
 
@@ -235,36 +237,42 @@ body {
     grid-template-areas:
     'item1 item2'
     'item3 item4';
-    padding-top: 30px;
+    padding-top: 10px;
+    justify-content: space-evenly;
     
-
-    .ratesItem1{ 
-        grid-area: item1;
-    }
-
-    .ratesItem2{ 
-        grid-area: item2; 
-    }
-
-    .ratesItem3{ 
-        grid-area: item3; 
-    }
-
-    .ratesItem4{ 
-        grid-area: item4; 
-    }
-
+    
     .ratesItem{ 
         position: relative;
-        width: 100%;
+        width: 90%;
+        margin: 5px;
+        padding: 5px;
+
+        .ratesItem1{ 
+            grid-area: item1;
+        }
+    
+        .ratesItem2{ 
+            grid-area: item2; 
+        }
+    
+        .ratesItem3{ 
+            grid-area: item3; 
+        }
+    
+        .ratesItem4{ 
+            grid-area: item4; 
+        }
+        
     }
-      
+
     .image {
         opacity: 1;
         display: block;
         width: 100%;
         height: auto;
         transition: .5s ease;
+        border-radius: 15px;
+        border: solid #BFBBB6 1px;
     }
       
     .text {
@@ -275,6 +283,7 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+    
     }
       
     .ratesItem:hover .image {
@@ -290,11 +299,12 @@ body {
         color: #BFBBB6;
         font-size: 16px;
         padding: 10px;
+        border-radius: 10px;
     
     }
 }
 
 
-
+// QUIERO USAR LAS OPERACIONES Y MIXINS PARA LAS MEDIAQ PERO NO ME DIO TIEMPO :(
 
 @import "mediaq";
