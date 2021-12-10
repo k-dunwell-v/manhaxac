@@ -156,7 +156,18 @@ body {
 @mixin site-style {
     background: rgba(0, 0, 0, 0.747);
     border-radius: 20px;
-  }
+}
+
+@mixin home-es {
+    padding: $home-padding;
+    margin: $home-margin;
+}
+
+@mixin main-es {
+    padding: $main-padding;
+    margin: $main-margin;
+    color: $main-color;
+}
 
 
 .home {
@@ -166,8 +177,8 @@ body {
       'moto nav'
       'footer footer';
     @include site-style;
-    padding: $home-padding;
-    margin: $home-margin;
+    @include home-es;
+
 
     .logo{
         display: block;
@@ -228,16 +239,14 @@ body {
     display: flex;
     flex-direction: column;
     @include site-style;
-    padding: $main-padding;
-    margin: $main-margin;
-    color: $main-color;
+    @include main-es;
     
     .carousel {
-        padding: 5px + 5;
+        padding: 10px;
     }
 
     .d-block {
-        border-radius: 5px + 5;
+        border-radius: 10px;
     }
     
 
