@@ -122,7 +122,6 @@ body {
     .contactInfo{
         list-style-type: none;
         overflow: hidden;
-        padding-left: 65px;
     
         .contact{
             float: left;
@@ -156,16 +155,15 @@ body {
 @mixin site-style {
     background: rgba(0, 0, 0, 0.747);
     border-radius: 20px;
+    
 }
 
 @mixin home-es {
     padding: $home-padding;
-    margin: $home-margin;
 }
 
 @mixin main-es {
     padding: $main-padding;
-    margin: $main-margin;
     color: $main-color;
 }
 

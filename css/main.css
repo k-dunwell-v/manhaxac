@@ -75,8 +75,7 @@ body {
     font-size: 12px; }
   .footer .contactInfo {
     list-style-type: none;
-    overflow: hidden;
-    padding-left: 65px; }
+    overflow: hidden; }
     .footer .contactInfo .contact {
       float: left;
       text-align: center;
@@ -102,8 +101,7 @@ body {
   grid-template-areas: 'logo nav' 'moto nav' 'footer footer';
   background: rgba(0, 0, 0, 0.747);
   border-radius: 20px;
-  padding: 64px 46px;
-  margin: 90px 610px 128px 610px; }
+  padding: 64px 46px; }
   .home .logo {
     display: block;
     margin-left: auto;
@@ -148,7 +146,6 @@ body {
   background: rgba(0, 0, 0, 0.747);
   border-radius: 20px;
   padding: 32px 46px;
-  margin: 30px 610px 128px 610px;
   color: #b6b0a9; }
   .flexHome .carousel {
     padding: 10px; }
@@ -200,31 +197,7 @@ body {
     padding: 10px;
     border-radius: 10px; }
 
-@media only screen and (max-width: 1440px) {
-  .home {
-    margin: 90px 380px 108px 380px; }
-  .flexHome {
-    margin: 30px 380px 108px 380px; }
-  .contactInfo {
-    padding-left: 85px; } }
-
-@media only screen and (max-width: 1024px) {
-  .home {
-    margin: 90px 180px 108px 180px; }
-  .flexHome {
-    margin: 30px 180px 108px 180px; }
-  .contactInfo {
-    padding-left: 70px; } }
-
-@media only screen and (max-width: 768px) {
-  .home {
-    margin: 90px 30px 64px 30px; }
-  .flexHome {
-    margin: 30px 30px 64px 30px; }
-  .contactInfo {
-    padding-left: 95px; } }
-
-@media only screen and (max-width: 425px) {
+@media (max-width: 599px) {
   .home, .flexHome {
     display: flex;
     flex-direction: column;
@@ -237,3 +210,43 @@ body {
     padding: 4px; }
   .contactInfo {
     padding-left: 50px; } }
+
+@media (min-width: 600px) {
+  .home {
+    margin: 90px 30px 64px 30px; }
+  .flexHome {
+    margin: 30px 30px 64px 30px; }
+  .contactInfo {
+    padding-left: 95px; } }
+
+@media (min-width: 900px) {
+  .home {
+    margin: 90px 180px 108px 180px; }
+  .flexHome {
+    margin: 30px 180px 108px 180px; }
+  .contactInfo {
+    padding-left: 70px; } }
+
+@media (min-width: 1200px) {
+  .home {
+    margin: 90px 380px 108px 380px; }
+  .flexHome {
+    margin: 30px 380px 108px 380px; }
+  .contactInfo {
+    padding-left: 85px; } }
+
+@media (min-width: 1500px) {
+  .home {
+    margin: 90px 500px 108px 500px; }
+  .flexHome {
+    margin: 30px 500px 108px 500px; }
+  .contactInfo {
+    padding-left: 85px; } }
+
+@media (min-width: 1800px) {
+  .home {
+    margin: 90px 610px 128px 610px; }
+  .flexHome {
+    margin: 30px 610px 128px 610px; }
+  .contactInfo {
+    padding-left: 75px; } }

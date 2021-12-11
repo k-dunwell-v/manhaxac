@@ -1,19 +1,62 @@
-// @mixin for-size($size) {
-//     @if $size == phone-only {
-//       @media (max-width: 599px) { @content; }
-//     } @else if $size == tablet-portrait-up {
-//       @media (min-width: 600px) { @content; }
-//     } @else if $size == tablet-landscape-up {
-//       @media (min-width: 900px) { @content; }
-//     } @else if $size == desktop-up {
-//       @media (min-width: 1200px) { @content; }
-//     } @else if $size == big-desktop-up {
-//       @media (min-width: 1800px) { @content; }
-//     }
-//   }
+@media (max-width: 599px) {
+    .home, .flexHome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 23px;
+        margin: 15px 15px 32px 15px;
+
+        }  
+
+    .button{
+        list-style: none;
+        justify-content: space-evenly;
+        padding: 4px
+    }
+
+    .contactInfo{
+        padding-left: 50px;
+    }
+}
 
 
-@media only screen and (max-width: 1440px){
+@media (min-width: 600px) {
+    .home {
+        margin: 90px 30px 64px 30px;
+    
+    }
+
+    .flexHome{
+        margin: 30px 30px 64px 30px;
+    
+    }
+
+    .contactInfo{
+        padding-left: 95px;
+        
+    }    
+    
+}
+
+@media (min-width: 900px) {
+    .home {
+        margin: 90px 180px 108px 180px;
+    
+    }
+
+    .flexHome{
+        margin: 30px 180px 108px 180px;
+    
+    }
+
+    .contactInfo{
+        padding-left: 70px;
+        
+    }
+} 
+
+
+@media (min-width: 1200px) {
     .home {
         margin: 90px 380px 108px 380px;
     
@@ -32,64 +75,40 @@
 }
 
 
-@media only screen and (max-width: 1024px){
+@media (min-width: 1500px) {
     .home {
-        margin: 90px 180px 108px 180px;
+        margin: 90px 500px 108px 500px;
     
     }
 
     .flexHome{
-        margin: 30px 180px 108px 180px;
+        margin: 30px 500px 108px 500px;
     
     }
 
     .contactInfo{
-        padding-left: 70px;
+        padding-left: 85px;
         
     }
-
-
+    
 }
 
 
-@media only screen and (max-width: 768px){
+@media (min-width: 1800px) {
     .home {
-        margin: 90px 30px 64px 30px;
+        margin: 90px 610px 128px 610px;
     
     }
 
     .flexHome{
-        margin: 30px 30px 64px 30px;
+        margin: 30px 610px 128px 610px;
     
     }
 
     .contactInfo{
-        padding-left: 95px;
-        
-    }
-
-
-}
-
-@media only screen and (max-width: 425px){
-    .home, .flexHome {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 32px 23px;
-        margin: 15px 15px 32px 15px;
-    
-    }
-
-    .button{
-        list-style: none;
-        justify-content: space-evenly;
-        padding: 4px
-    }
-
-    .contactInfo{
-        padding-left: 50px;
+        padding-left: 75px;
         
     }
 
 }
+
